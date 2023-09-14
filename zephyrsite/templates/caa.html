@@ -370,7 +370,7 @@ input[name="phone_number_1"]
       
       <!-- CA title -->
       <div class="box2">
-        <form method="POST" action="https://script.google.com/macros/s/AKfycbzoAfU1qNGj-JrNudd7MKrA7Oi_-Rl8vgIcjnAVnB7Bx8LllGXojGSNXwJNCsMMNouX/exec" class="post-form">  
+        <form method="POST" action="" class="post-form" name="formName">  
           <!--<input type="hidden" name="csrfmiddlewaretoken" value="rLxGIZjY8H1gTNIvmeDBXxlv9G09aCjvfhfbAg43XEl7rey48laWQY8upSUotBkk"> -->
             {%csrf_token%}
         
@@ -525,6 +525,18 @@ input[name="phone_number_1"]
       </div> -->
     </div>
   </div>
+  <script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbzoAfU1qNGj-JrNudd7MKrA7Oi_-Rl8vgIcjnAVnB7Bx8LllGXojGSNXwJNCsMMNouX/exec'
+			const form = document.forms['formName']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
 
 </body>
 
