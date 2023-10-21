@@ -6,10 +6,10 @@
 }
 
 .pfp{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     border-radius: 100%;
-    box-shadow: 5px 5px rgb(212, 208, 208);
+    box-shadow: 10px 10px rgb(212, 208, 208);
 }
 .ammar-text{
     align-content: center;
