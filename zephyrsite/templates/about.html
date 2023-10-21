@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{% static 'LOGO.png' %}" type="image/icon type">
     <link rel="stylesheet" href="{%static 'all.css'%}">
+    <link rel="stylesheet" href="{%static 'profile.css'%}">
     <title>About Zephyr</title>
     <style>
         * {
@@ -219,6 +220,25 @@
   {
     display: none;
   }
+  .ammar{
+    position: absolute;
+    left: 50%;
+    bottom:20%;
+
+    }
+
+.pfp{
+    height: 30%;
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 5px 5px rgb(212, 208, 208);
+}
+.ammar-text{
+    align-content: center;
+    
+    color: white;
+    font-size: large;
+}
 }
 @media screen and (min-width: 1201px) {
   .phone-heading
@@ -248,18 +268,16 @@
             platform for students, scientists, professors and the industry to come together, showcase their work and
             exchange ideas. A national platform for the confluence of aerospace students, enthusiasts, astronauts and
             companies. It caters to the layman who is fascinated by flying crafts as to the expert who makes fascinating
-            crafts.</p>
+            crafts.  With challenging competitions, interactive workshops,glamorous and informative exhibitions,
+            fascinating airshows, panel debates and the coolest lectures by the role models in the field of Aerospace.
+            Guest lectures, panel debates, exhibitions. Zephyr has it all!
+</p>
     </div>
     
     
-    <div class="upper-content" style="position: fixed; top: 70%; left: 20%;">
-        <p>
-            With challenging competitions, interactive workshops,<br> glamorous and informative exhibitions,
-            fascinating <br>airshows, panel debates and the coolest lectures<br> by the role models in the field of Aerospace.
-            <br>Guest lectures, panel debates, exhibitions.<br> Zephyr has it all!
-
-        </p>
-    </div>
+    
+          
+    
 
     <div class="lower-content">
         <div id="content-title">
@@ -273,14 +291,19 @@
         <div id="phone-heading-title">ABOUT ZEPHYR</div>
         <div id="phone-heading-subtitle">Annual Aviation Fest of IIT Bombay organised by The Aerospace Engineering Association</div>
     </div>
+    <div class="ammar">
+        <img class="pfp" src="{%static 'ammar.jpeg'%}">
+        <p class="ammar-text">Ammar Barbhaiwala</p>
+       
+    </div>
     <div class="phone-content">
-        <p>Zephyr become an annual workshop on Aerospace Education and Research at IIT Bombay. It aims to provide a
+        <p>Zephyr has become an annual workshop on Aerospace Education and Research at IIT Bombay. It aims to provide a
             platform for students, scientists, professors and the industry to come together, showcase their work and
-            exchange ideas. A national platform for the confluence of aerospace students, enthusiasts, astronauts and
+            exchange ideas. It provides a  national platform for the confluence of aerospace students, enthusiasts, astronauts and
             companies. It caters to the layman who is fascinated by flying crafts as to the expert who makes fascinating
             crafts. With challenging competitions, interactive workshops, glamorous and informative exhibitions,
             fascinating airshows, panel debates and the coolest lectures by the role models in the field of Aerospace
-            and Aviation. Guest lectures, panel debates, exhibitions. Zephyr has it all!</p>
+            and Aviation,Guest lectures, panel debates, exhibitions. Zephyr has it all!</p>
     </div>
 </body>
 

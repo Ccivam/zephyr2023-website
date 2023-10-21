@@ -1,0 +1,41 @@
+.ammar{
+    position: absolute;
+    left: 83%;
+    bottom:13%;
+
+}
+
+.pfp{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px rgb(212, 208, 208);
+}
+.ammar-text{
+    align-content: center;
+    
+    font-size: large;
+}
+@media screen (max-width:1200px) {
+.ammar{
+    position: absolute;
+    left: 50%;
+    bottom:20%;
+
+    }
+
+.pfp{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px rgb(212, 208, 208);
+}
+.ammar-text{
+    align-content: center;
+    
+    color: white;
+    font-size: large;
+}
+
+    
+}
