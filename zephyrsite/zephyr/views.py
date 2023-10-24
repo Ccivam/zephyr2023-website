@@ -60,6 +60,8 @@ def lectures(request):
     return render(request,'lectures.html')
 def mm(request):
     return render(request,'caa.html')
+def form_submit(request):
+    return render(request,'form_submission.html')
 def home_view(request):
     context ={}
  

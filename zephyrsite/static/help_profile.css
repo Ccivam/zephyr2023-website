@@ -1,0 +1,39 @@
+.help_{
+    display: inline;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 36%;
+    left: 1%;
+   
+}
+.first_person{
+    display: inline;
+    height: 40%;
+    width: 20%;
+   
+    border: 100px black;
+
+}
+
+
+@media screen (max-width:480px){
+.help_{
+    display: inline;
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    top: 36%;
+    left: 1%;
+   
+}
+.first_person{
+    display: inline;
+    height: 20000000vh;
+    width: 20000000000vh;
+   
+    border: 100px black;
+
+}
+    
+}

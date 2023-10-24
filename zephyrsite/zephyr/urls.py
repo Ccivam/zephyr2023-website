@@ -32,4 +32,5 @@ urlpatterns = [
     path('liquid_engine',views.liquid),#soon page
     path('entrepreneurship',views.entrepreneurship),#soon page
     path('lectures',views.lectures),#soon page
+    path('formSubmit',views.form_submit)
 ]

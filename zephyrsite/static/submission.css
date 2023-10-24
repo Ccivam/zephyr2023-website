@@ -1,0 +1,21 @@
+
+body {
+      background-image: url("Reg\ Form\ bg.jpg");
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      height: 130vh;
+}
+
+.menu{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: azure;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(108, 0, 155), rgba(0,0,151,0.52));
+    padding: 7px 15px;
+    margin: 0 2rem;
+
+
+}
+

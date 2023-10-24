@@ -1,13 +1,13 @@
 .ammar{
     position: absolute;
-    left: 83%;
-    bottom:13%;
+    left: 80%;
+    bottom:10%;
 
 }
 
 .pfp{
-    height: 80%;
-    width: 80%;
+    height: 50%;
+    width: 50%;
     border-radius: 100%;
     box-shadow: 10px 10px rgb(212, 208, 208);
 }
@@ -20,7 +20,7 @@
 .ammar{
     position: absolute;
     left: 50%;
-    bottom:20%;
+    top:90%;
 
     }
 
@@ -38,4 +38,15 @@
 }
 
     
+}
+.navbar .menu{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: azure;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(108, 0, 155), rgba(0,0,151,0.52));
+    padding: 7px 15px;
+    margin: 0 2rem;
+
+
 }

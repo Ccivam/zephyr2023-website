@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
     <link rel="stylesheet" href="{%static  'regform.css'%}">
     <link rel="stylesheet" href="{%static 'all.css'%}">
    <link rel="icon" href="{%static 'LOGO.png'%}" type="image/icon type">
@@ -165,15 +166,23 @@
 
   
   <p>
+   
     <label for="id_statement_of_purpose">Statement of purpose:</label>
-    <textarea name="statement_of_purpose" cols="40" rows="5" required id="id_statement_of_purpose">
-</textarea>
+
+    <textarea name="statement_of_purpose" cols="2" rows="3" required id="id_statement_of_purpose">
+    </textarea>
+   
+
     
     
       
     
   </p>
-          <button type="submit" id="reg-btn" class="save btn btn-default">SUBMIT</button>  
+       
+       <button type="submit" id="reg-btn"  class="save btn btn-default" >SUBMIT</button>
+      
+     
+        
       </form> 
       <!-- <form method="POST" class="post-form">  
         <input type="hidden" name="csrfmiddlewaretoken" value="oosBBngOOTBwmizHSm4hxAYQvQgfzHhvdUDNI9pcyfNKNV2rrFy1d5ELHnQ6n9J9">  
@@ -215,7 +224,12 @@
 				.then(() => {  window.location.reload(); })
 				.catch(error => console.error('Error!', error.message))
 			})
+       document.getElementById("reg-btn").addEventListener("click", function(event){
+           let url = "http://127.0.0.1:8000/zephyr/formSubmit"
+           window.location.href = url;
+         });
 		  </script>
+     
 
 </body>
 

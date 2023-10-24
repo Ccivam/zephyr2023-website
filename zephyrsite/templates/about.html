@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+      
     <link rel="icon" href="{% static 'LOGO.png' %}" type="image/icon type">
     <link rel="stylesheet" href="{%static 'all.css'%}">
     <link rel="stylesheet" href="{%static 'profile.css'%}">
@@ -223,13 +225,13 @@
   .ammar{
     position: absolute;
     left: 50%;
-    bottom:20%;
+    bottom: 0.0000000000000001%;
 
     }
 
 .pfp{
-    height: 30%;
-    width: 30%;
+    height: 25%;
+    width: 25%;
     border-radius: 100%;
     box-shadow: 5px 5px rgb(212, 208, 208);
 }
@@ -255,11 +257,18 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+  
         <!-- Zephyr logo -->
+        
+       
+   <div class="navbar">
+        <!--Zephyr logo -->
         <div class="left">
-            <a href="/zephyr/home"><img class="logo" src="{% static 'LOGO.png' %}" alt="Zephyr logo"></a>
+            <a href="/zephyr/home"><img class="logo" src="{% static 'home_navbar.png' %}" alt="Zephyr logo"></a>
+            
         </div>
+   
+    
         <!-- menu buttons -->
     </div>
     <!-- Content -->
@@ -282,20 +291,26 @@
     <div class="lower-content">
         <div id="content-title">
             <p>ABOUT ZEPHYR</p>
+            <br>
+            
+
         </div>
         <div id="content-body">
             <p>Annual Aviation Fest of IIT Bombay organised by The Aerospace Engineering Association</p>
         </div>
     </div>
+    
     <div class="phone-heading">
         <div id="phone-heading-title">ABOUT ZEPHYR</div>
         <div id="phone-heading-subtitle">Annual Aviation Fest of IIT Bombay </div>
     </div>
-    <div class="ammar">
+   <div class="ammar">
         <img class="pfp" src="{%static 'ammar.jpeg'%}">
         <p class="ammar-text">Ammar Barbhaiwala</p>
        
     </div>
+
+
     <div class="phone-content">
         <p>Zephyr has become an annual workshop on Aerospace Education and Research at IIT Bombay. It aims to provide a
             platform for students, scientists, professors and the industry to come together, showcase their work and
@@ -305,6 +320,8 @@
             fascinating airshows, panel debates and the coolest lectures by the role models in the field of Aerospace
             and Aviation,Guest lectures, panel debates, exhibitions. Zephyr has it all!</p>
     </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
