@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3aab0d0a4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'pics_help.css'%}">
     <link rel="icon" href="{% static 'LOGO.png' %}" type="image/icon type">
     <link rel="stylesheet" href="{%static 'all.css'%}">
     <title>Contact Us</title>
@@ -399,6 +400,42 @@ body
 {
     height: 100vh;
 }
+  #images_faq1{
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    top: 28%;
+    left: 1%;
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+}
+#images_faq2{
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    top: 28%;
+    right: 1%;
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+}
+
+#info{
+    color: aliceblue;
+    font-style: serif;
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    
+}
+#info2{
+    color: aliceblue;
+    font-style: serif;
+    position: absolute;
+    top: 70%;
+    right: 1%;
+
+}
+
 }
 @media screen and (min-width: 901px) {
   .navbar{
@@ -481,6 +518,15 @@ body
         }
       }
     </script>
+    <div class="container-main">
+      <img src="{%static 'sahil-kale.png'%}" id="images_faq1">
+      <p id="info">
+        <h1 style="color: rgb(0, 0, 0);" id="info">Sahil Kale</h1><br>
+        <p style="color:rgb(136, 127, 127); position: absolute; top: 78%; left: 6%; @media screen and (max-width:900px){left:3%}" id="info">OPS MANAGER</p>
+       
+
+      </p>
+      
     <div class="central-content">
         <!-- <img id="hero-img" src="{% static 'Success page image.png' %}"> -->
         <div id="hero-content">
@@ -492,6 +538,16 @@ body
                     <a href="mailto:athul.zephyr@gmail.com"><i class="fa fa-solid fa-envelope"></i></a><p>Contact us on Email!</p></div>
         </div>
     </div>
+    <img  src="{%static 'design.png'%}" id="images_faq2">
+    <p id="info2">
+       <h1 style="color: rgb(0, 0, 0);" id="info2">Athul</h1><br>
+        <p style="color:rgb(136, 127, 127); position: absolute; top: 78%; right: 6%;" id="info2">OPS MANAGER</p>
+       
+
+
+    </p>
+    </div>
+
     <div class="content">
         <!-- illustration -->
         

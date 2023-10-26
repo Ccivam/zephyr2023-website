@@ -1,44 +1,3 @@
-.ammar{
-    position: absolute;
-    left: 80%;
-    bottom:10%;
-
-}
-
-.pfp{
-    height: 50%;
-    width: 50%;
-    border-radius: 100%;
-    box-shadow: 10px 10px rgb(212, 208, 208);
-}
-.ammar-text{
-    align-content: center;
-    
-    font-size: large;
-}
-@media screen (max-width:1200px) {
-.ammar{
-    position: absolute;
-    left: 50%;
-    top:90%;
-
-    }
-
-.pfp{
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    box-shadow: 5px 5px rgb(212, 208, 208);
-}
-.ammar-text{
-    align-content: center;
-    
-    color: white;
-    font-size: large;
-}
-
-    
-}
 .navbar .menu{
     border: 2px solid white;
     border-radius: 25px;
@@ -49,4 +8,8 @@
     margin: 0 2rem;
 
 
+}
+.container1{
+    display: flex;
+    
 }

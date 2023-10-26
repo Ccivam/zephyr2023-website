@@ -1,0 +1,74 @@
+
+#images_faq1{
+    height: 40%;
+    width: 14%;
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+}
+#images_faq2{
+    height: 40%;
+    width: 14%;
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+}
+
+#info{
+    color: aliceblue;
+    font-style: serif;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    
+}
+#info2{
+    color: aliceblue;
+    font-style: serif;
+    position: absolute;
+    top: 70%;
+    right: 8%;
+
+}
+@media screen and (max-width:480px) {
+    #images_faq1{
+    height: 40%;
+    width: 20%;
+    
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+}
+#images_faq2{
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+}
+
+#info{
+    color: aliceblue;
+    font-style: serif;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    
+}
+#info2{
+    color: aliceblue;
+    font-style: serif;
+    position: absolute;
+    top: 70%;
+    right: 8%;
+
+}
+
+
+    
+}

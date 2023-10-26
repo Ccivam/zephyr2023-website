@@ -179,7 +179,7 @@
     
   </p>
        
-       <button type="submit" id="reg-btn"  class="save btn btn-default" >SUBMIT</button>
+       <button type="submit" id="reg-btn"  class="save btn btn-default">SUBMIT</button>
       
      
         
@@ -216,18 +216,18 @@
   <script>
 			const scriptURL = 'https://script.google.com/macros/s/AKfycbzoAfU1qNGj-JrNudd7MKrA7Oi_-Rl8vgIcjnAVnB7Bx8LllGXojGSNXwJNCsMMNouX/exec'
 			const form = document.forms['formName']
-		  
-			form.addEventListener('submit', e => {
+		 
+			 form.addEventListener('submit', e => {
+        
 			  e.preventDefault()
 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 				.then(response => alert("Thank you! your form is submitted successfully." ))
 				.then(() => {  window.location.reload(); })
 				.catch(error => console.error('Error!', error.message))
+        
+        
 			})
-       document.getElementById("reg-btn").addEventListener("click", function(event){
-           let url = "http://127.0.0.1:8000/zephyr/formSubmit"
-           window.location.href = url;
-         });
+      
 		  </script>
      
 
