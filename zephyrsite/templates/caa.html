@@ -221,10 +221,9 @@
         
 			  e.preventDefault()
 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Thank you! your form is submitted successfully." ))
-				.then(() => {  window.location.reload(); })
-				.catch(error => console.error('Error!', error.message))
-        
+				
+				.then(() => {  window.location.replace("https://www.aero.iitb.ac.in/zephyr/formSubmit"); })
+			 
         
 			})
       
