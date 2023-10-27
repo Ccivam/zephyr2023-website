@@ -18,7 +18,7 @@
             background-image: url("{% static 'Incentives bg.jpg' %}");
             background-repeat: no-repeat;
             position: relative;
-            background-size: cover;
+            /*background-size: cover;*/
             /* height: 100vh; */
         }
         .navbar {
@@ -344,6 +344,8 @@
         {
             padding: 15px;
         }
+       
+
         .mobile-container
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -401,43 +403,71 @@ body
     height: 100vh;
 }
   #images_faq1{
-    height: 40%;
-    width: 20%;
-    position: absolute;
-    top: 28%;
-    left: 1%;
-    border-radius: 30%;
-    box-shadow: 5px 10px rgb(61, 67, 138);
+    display: none;
+    
 }
 #images_faq2{
-    height: 40%;
-    width: 20%;
-    position: absolute;
-    top: 28%;
-    right: 1%;
-    border-radius: 30%;
-    box-shadow: 5px 10px rgb(61, 67, 138);
+  display: none;
+    
 }
 
 #info{
-    color: aliceblue;
-    font-style: serif;
-    position: absolute;
-    top: 70%;
-    left: 1%;
+    display: none;
     
 }
 #info2{
-    color: aliceblue;
-    font-style: serif;
-    position: absolute;
-    top: 70%;
-    right: 1%;
+    display: none;
+
+}
+.images_faq1_mobile{
+     height: 35%%;
+     width: 35%;
+    
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+    
+}
+ .images_faq2_mobile{
+   height: 35%;
+    width: 40%;
+    
+    border-radius: 30%;
+    box-shadow: 5px 10px rgb(61, 67, 138);
+    
+}
+
+#info_mobile{
+    display: none;
+    
+}
+#info2_mobile{
+    display: none;
 
 }
 
 }
 @media screen and (min-width: 901px) {
+  .text_mobile{
+    display:none;
+  }
+  .images_faq1_mobile{
+    display: none;
+    
+}
+.images_faq2_mobile{
+  display: none;
+    
+}
+
+#info_mobile{
+    display: none;
+    
+}
+#info2_mobile{
+    display: none;
+
+}
+
   .navbar{
     display: flex;
   }
@@ -528,6 +558,7 @@ body
       </p>
       
     <div class="central-content">
+      
         <!-- <img id="hero-img" src="{% static 'Success page image.png' %}"> -->
         <div id="hero-content">
             
@@ -537,6 +568,22 @@ body
                 <div class="contact-box">
                     <a href="mailto:athul.zephyr@gmail.com"><i class="fa fa-solid fa-envelope"></i></a><p>Contact us on Email!</p></div>
         </div>
+        <h4 class="text_mobile">MnP Managers</h4>
+        <img  src="{%static 'design.png'%}" class="images_faq2_mobile" class="contact-box">
+        <h4 class="text_mobile">Athul</h4>
+        
+      
+       
+
+
+    </p>
+    <img src="{%static 'sahil-kale.png'%}" class="images_faq1_mobile" style="height: 90%;">
+    <h4 class="text_mobile">Sahil Kale</h4>
+     
+        
+       
+
+      </p>
     </div>
     <img  src="{%static 'design.png'%}" id="images_faq2">
     <p id="info2">
@@ -549,6 +596,7 @@ body
     </div>
 
     <div class="content">
+
         <!-- illustration -->
         
         <!-- text -->
