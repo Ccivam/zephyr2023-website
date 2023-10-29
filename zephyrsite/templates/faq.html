@@ -16,10 +16,10 @@
         }
         body {
             background-image: url("{% static 'Incentives bg.jpg' %}");
-            background-repeat: no-repeat;
+            /*background-repeat: no-repeat;*/
             position: relative;
             /*background-size: cover;*/
-            /* height: 100vh; */
+            /* height: 100vh;*/ 
         }
         .navbar {
             display: flex;
@@ -368,6 +368,10 @@
             text-decoration: none;
         }
     @media screen and (max-width: 900px) {
+   #info-lap{
+    display: none;
+   }
+
   .navbar{
     display: none;
   }
@@ -422,8 +426,10 @@ body
 }
 
 .images_faq1_mobile{
-     height: 35%%;
-     width: 35%;
+     height: 28%;
+     width: 32%;
+     position: absolute;
+     left:35%;
     
     border-radius: 30%;
     box-shadow: 5px 10px rgb(61, 67, 138);
@@ -449,6 +455,9 @@ body
 
 }
 @media screen and (min-width: 901px) {
+  #info-lap-mobile{
+    display: none;
+  }
   .break-mobile{
     display: none;
   }
@@ -554,65 +563,54 @@ body
       }
     </script>
     <div class="container-main">
-      <img src="{%static 'sahil-kale.png'%}" id="images_faq1">
-      <p id="info">
-        <h1 style="color: rgb(0, 0, 0);" id="info">Sahil Kale</h1><br>
-        <p style="color:rgb(136, 127, 127); position: absolute; top: 78%; left: 6%; @media screen and (max-width:900px){left:3%}" id="info">MnP MANAGER</p>
+      <img src="{%static 'sahil-new-kale.jpg'%}" id="images_faq1" style="position: absolute; left: 20%;">
+      <h1 style="color: white; position: absolute; top: 70%; left: 22%;" id="info-lap">Sahil Kale</h1>
+       <a href="https://wa.me/8792439577" id="info-lap" style="color: white; position: absolute; top: 81%; left: 22%;"><i class="fa fa-brands fa-whatsapp"></i></a><p id="info"style=" color: white; position: absolute; top: 78%; left: 23.5%;" id="info-lap">8792439577</p></div>
+         <a href="mailto:athul.zephyr@gmail.com" id="info-lap" style="color: white; position: absolute; top: 85%; left: 22%;"><i class="fa fa-solid fa-envelope"></i></a><p  style="color: white; position: absolute; top: 82%; left: 23.5%;" id="info-lap">athul.zephyr@gmail.com</p></div>
        
-
-      </p>
+      
       
     <div class="central-content">
       <div class="break-mobile">
-      <br >
-      <br >
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      
+      
       </div>
       
         <!-- <img id="hero-img" src="{% static 'Success page image.png' %}"> -->
-        <div id="hero-content">
-          
-            <div class="contact-box">
-                <a href="https://wa.me/8792439577"><i class="fa fa-brands fa-whatsapp"></i></a><p>Contact us on WhatsApp!</p></div>
-                
-                <div class="contact-box">
-                    <a href="mailto:athul.zephyr@gmail.com"><i class="fa fa-solid fa-envelope"></i></a><p>Contact us on Email!</p></div>
-        </div>
+       
         <h4 class="text_mobile">MnP Managers</h4>
         <img  src="{%static 'design.png'%}" class="images_faq2_mobile" class="contact-box">
-        <h4 class="text_mobile">Athul</h4>
+        <br>
+         <h4 class="text_mobile">Athul<br>
+           <a href="https://wa.me/8792439577"    id="info-lap-mobile" style="color: white; position: relative; top: 5%; left:0.001%;"><i class="fa fa-brands fa-whatsapp"></i></a><p id="info-lap-mobile"style=" color: white; position: relative; top: -35%; left: 22%;" >8792439577</p></div>
+           <a href="mailto:athul.zephyr@gmail.com" id="info-lap-mobile"  style="color: white; position: relative; top: 4%; left:42%;"><i class="fa fa-solid fa-envelope"></i></a><p id="info-lap-mobile"  style="color: white; position: relative; top: -3%; left:46%;">athul.zephyr@gmail.com</p></div>
+        
+
+
+         </h4>
         
       
        
 
 
     </p>
-    <img src="{%static 'sahil-kale.png'%}" class="images_faq1_mobile" style="height: 90%;">
-    <h4 class="text_mobile">Sahil Kale</h4>
-     
+    <img src="{%static 'sahil-new-kale.jpg'%}" class="images_faq1_mobile" >
+    <h4 class="text_mobile" style="color:white;   position: relative; left: 45%; top: 30%;">Sahil Kale</h4>
+     <a href="https://wa.me/8792439577"    id="info-lap-mobile" style="color: white; position: relative; top: 28%; left:45%;"><i class="fa fa-brands fa-whatsapp"></i></a><p id="info-lap-mobile"style=" color: white; position: relative; top: 21.5%; left: 49%;" >8792439577</p></div>
+           <a href="mailto:athul.zephyr@gmail.com" id="info-lap-mobile"  style="color: white; position: relative; top: 19%; left:45%;"><i class="fa fa-solid fa-envelope"></i></a><p id="info-lap-mobile"  style="color: white; position: relative; top: 12%; left:49.4%;">athul.zephyr@gmail.com</p></div>
         
        
 
       </p>
     </div>
-    <img  src="{%static 'design.png'%}" id="images_faq2">
+    <img  src="{%static 'design.png'%}" id="images_faq2" style="position: absolute; right: 20%;">
     <p id="info2">
-       <h1 style="color: rgb(0, 0, 0);" id="info2">Athul</h1><br>
-        <p style="color:rgb(136, 127, 127); position: absolute; top: 78%; right: 6%;" id="info2">MnP MANAGER</p>
+       
+        <h1 style="color: white; position: absolute; top: 70%; right: 25%;" id="info-lap">Athul</h1>
+       <a href="https://wa.me/8792439577" id="info-lap" style="color: white; position: absolute; top: 81%; right: 30%;"><i class="fa fa-brands fa-whatsapp"></i></a><p  style=" color: white; position: absolute; top: 78%; right: 23%;" id="info-lap">8792439577</p></div>
+         <a href="mailto:athul.zephyr@gmail.com" id="info-lap" style="color: white; position: absolute; top: 85%; right: 30%;"><i class="fa fa-solid fa-envelope"></i></a><p  style="color: white; position: absolute; top: 82%; right: 16.7%;" id="info-lap">athul.zephyr@gmail.com</p></div>
+       
+      
        
 
 
