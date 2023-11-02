@@ -209,11 +209,23 @@
             text-align: center;
         }
 @media screen and (max-width: 1200px) {
+    .team-pic-desk{
+        display: none;
+    }
+    .team-pic{
+        height: 40%;
+        width: 40%;
+        border-radius: 40%;
+        
+    }
   body
   {
     background-image: url("{% static 'Incentives bg.jpg' %}");
     /* height: 200vh; */
+    background-repeat: repeat;
   }
+
+
   .upper-content
   {
     display: none;
@@ -243,6 +255,16 @@
 }
 }
 @media screen and (min-width: 1201px) {
+
+    .team-pic-desk{
+        height: 40%;
+        width: 32%;
+        position: absolute;
+        right: 7%;
+        bottom: 2%;
+        border-radius: 30%;
+        
+    }
   .phone-heading
   {
     display: none;
@@ -278,8 +300,7 @@
         <p>Zephyr become an annual workshop on Aerospace Education and Research at IIT Bombay. It aims to provide a
             platform for students, scientists, professors and the industry to come together, showcase their work and
             exchange ideas. A national platform for the confluence of aerospace students, enthusiasts, astronauts and
-            companies. It caters to the layman who is fascinated by flying crafts as to the expert who makes fascinating
-            crafts.  With challenging competitions, interactive workshops,glamorous and informative exhibitions,
+            companies.With challenging competitions, interactive workshops,glamorous and informative exhibitions,
             fascinating airshows, panel debates and the coolest lectures by the role models in the field of Aerospace.
             Guest lectures, panel debates, exhibitions. Zephyr has it all!
 </p>
@@ -287,9 +308,7 @@
     
     
     
-          
-    
-
+        
     <div class="lower-content">
         <div id="content-title">
             <p>ABOUT ZEPHYR</p>
@@ -306,17 +325,23 @@
         <div id="phone-heading-title">ABOUT ZEPHYR</div>
         <div id="phone-heading-subtitle">Annual Aviation Fest of IIT Bombay </div>
     </div>
-  
 
+ <h4 class="team-pic-desk" style="position: absolute; bottom: 7%; right: -3%;">THE TEAM</h4>
+ <img class="team-pic-desk" src="{%static 'team.png'%}">
 
     <div class="phone-content">
+         
+       
         <p>Zephyr has become an annual workshop on Aerospace Education and Research at IIT Bombay. It aims to provide a
             platform for students, scientists, professors and the industry to come together, showcase their work and
             exchange ideas. It provides a  national platform for the confluence of aerospace students, enthusiasts, astronauts and
-            companies. It caters to the layman who is fascinated by flying crafts as to the expert who makes fascinating
-            crafts. With challenging competitions, interactive workshops, glamorous and informative exhibitions,
+            companies. With challenging competitions, interactive workshops, glamorous and informative exhibitions,
             fascinating airshows, panel debates and the coolest lectures by the role models in the field of Aerospace
             and Aviation,Guest lectures, panel debates, exhibitions. Zephyr has it all!</p>
+            <h4>THE TEAM</h4>
+             <img class="team-pic" src="{%static 'team.png'%}">
+
+           
     </div>
 
    
