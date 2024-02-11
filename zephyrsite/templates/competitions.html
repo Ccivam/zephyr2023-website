@@ -15,7 +15,7 @@
         }
         body {
             background-image: url("{% static 'drone_background.png' %}");
-            background-repeat: no-repeat;
+          /*  background-repeat: no-repeat; */
             position: relative;
             background-size: cover;
             /* height: 100vh; */
@@ -25,7 +25,7 @@
             justify-content: space-between;
         }
         .navbar .left {
-            padding: 10px 20px;
+          padding: 10px 20px;
         }
         .desktop-logo {
             margin: 0 0 0 1rem;
@@ -81,7 +81,10 @@
         .content .right .box4 {
             margin: 0rem 4.5rem 0 0;
             display: flex;
-            float: right;
+            position:absolute;
+            bottom:0;
+            right:0;
+            float: bottom;
             color: white;
             font-size: 22.5px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -321,7 +324,7 @@
 .competition-tiles
 {
     width: 90vw;
-    margin-left: 5vw;
+    margin-left: 17vw;
     /* background-color: aqua; */
     height: 70vh;
     display: flex;
@@ -410,6 +413,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
     @media screen and (max-width: 900px) {
+
+     
+
+
+
+   
+
+
   .navbar{
     display: none;
   }
@@ -481,6 +492,7 @@
             border-radius: 25px;
             color: azure;
             text-decoration: none;
+            
             background-image: linear-gradient(to right, rgb(108, 0, 155), rgba(0,0,151,0.52));
             padding: 7px 15px;
             margin: 0 2rem;
@@ -522,37 +534,40 @@
           <a href="/zephyr/home">HOME</a>
           <a href="/zephyr/about">ABOUT</a>
           <a href="/zephyr/cahome">CA HOMEPAGE</a>
-          <a href="/zephyr/contact">CONTACT</a>
+          <a href="/zephyr/help">CONTACT</a>
         </div>
     </div>
     <div class="competition-tiles">
         <div class="competition-box">
             <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1"> -->
             <div class="comp-title">
-                <p class="comp-title-text">SURGICAL STRIKE 2.0</p>
+                <p class="comp-title-text">SYMPOSIUM </p>
             </div>
-            <img class="comp-img" src="{% static 'Drone illustration.png' %}" alt="Image 2">
+            <img class="comp-img" src="{% static 'symposium_bg.png' %}" alt="Image 2">
             <div class="comp-title-btn-panel">
-                <a href="/zephyr/surgical_strike"><div class="comp-title-btn">EXPLORE</div></a>
-                <a href="https://docs.google.com/forms/d/1QkuNAsWpPoEbBNF-Bhp-Th2hjC5YoQcXJnAHnx8NgMo/edit"><div class="comp-title-btn">REGISTER</div></a>
+                <a href="/zephyr/symposium"><div class="comp-title-btn">EXPLORE</div></a>
+                <a href="/zephyr/register_s"><div class="comp-title-btn">REGISTER</div></a>
             </div>
         </div>
-        <div class="competition-box">
-            <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1"> -->
-            <div class="comp-title">
-                <p class="comp-title-text">WATER ROCKET</p>
+       <div class=""> 
+         <!--    <img src="{% static 'Competitions box.png' %}" alt="Image 1"> --> 
+            <div class="">
+             <!--   <p class="comp-title-text">WATER ROCKET</p> -->
             </div>
-            <img class="comp-img" src="{% static 'rocket.png' %}" alt="Image 2">
-            <div class="comp-title-btn-panel">
-                <a href="/zephyr/water_rocket"><div class="comp-title-btn">EXPLORE</div></a>
-                <a href="/zephyr/comingsoon"><div class="comp-title-btn">REGISTER</div></a>
+          <!--  <img class="comp-img" src="{% static 'rocket.png' %}" alt="Image 2"> -->
+            <div class="">
+               <!-- <a href="/zephyr/water_rocket"><div class="comp-title-btn">EXPLORE</div></a> -->
+             <!--   <a href="/zephyr/comingsoon"><div class="comp-title-btn">REGISTER</div></a> -->
             </div>
         </div>
     </div>
-    <div class="competition-tiles">
-      <div class="competition-box">
-          <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1"> -->
-          <div class="comp-title">
+    
+    
+    
+   <!--  <div class="competition-tiles">  -->
+    <!--  <div class="competition-box"> -->
+   <!--        <img src="{% static 'Competitions box.png' %}" alt="Image 1"> --> 
+       <!--   <div class="comp-title">
               <p class="comp-title-text">AERO CONTRAPTION</p>
           </div>
           <img class="comp-img" src="{% static 'AeroContraption ICON.jpg' %}" alt="Image 2">
@@ -561,7 +576,9 @@
               <a href="/zephyr/comingsoon"><div class="comp-title-btn">REGISTER</div></a>
           </div>
       </div>
-  </div>
+  </div> 
+  -->
+
     <!-- Content -->
     <div class="content">
         
@@ -608,7 +625,7 @@
           <a href="/zephyr/home">HOME</a>
           <a href="/zephyr/about">ABOUT</a>
           <a href="/zephyr/cahome">CA HOMEPAGE</a>
-          <a href="/zephyr/contact">CONTACT</a>
+          <a href="/zephyr/help">CONTACT</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i id="hamburger-icon" class="fa fa-bars"></i>
@@ -648,23 +665,24 @@
     </div> -->
     <div class="competition-tiles-phone">
         <div class="competition-box">
-            <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1"> -->
+           <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1">         -->
             <div class="comp-title">
-                <p class="comp-title-text">SURGICAL STRIKE 2.0</p>
+                <p class="comp-title-text">SYMPOSIUM</p>
             </div>
-            <img class="comp-img" src="{% static 'Drone illustration.png' %}" alt="Image 2">
+            <img class="comp-img" src="{% static 'symposium_bg.png' %}" alt="Image 2">
             <div class="comp-title-btn-panel">
-                <a href="/zephyr/surgical_strike"><div class="comp-title-btn">EXPLORE</div></a>
-                <a href="https://docs.google.com/forms/d/1QkuNAsWpPoEbBNF-Bhp-Th2hjC5YoQcXJnAHnx8NgMo/edit"><div class="comp-title-btn">REGISTER</div></a>
+                <a href="/zephyr/symposium"><div class="comp-title-btn">EXPLORE</div></a>
+                <a href="/zephyr/register_s"><div class="comp-title-btn">REGISTER</div></a>  
             </div>
         </div>
         <br>
         <br>
-        <div class="competition-box">
+
+     <!--  <div class="competition-box"> -->
             <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1"> -->
-            <div class="comp-title">
-                <p class="comp-title-text">WATER ROCKET</p>
-            </div>
+       <!--     <div class="comp-title">   -->
+             <!--   <p class="comp-title-text">WATER ROCKET</p> -->
+         <!--   </div>
             <img class="comp-img" src="{% static 'rocket.png' %}" alt="Image 2">
             <div class="comp-title-btn-panel">
                 <a href="/zephyr/water_rocket"><div class="comp-title-btn">EXPLORE</div></a>
@@ -673,16 +691,17 @@
         </div>
         <br>
         <br>
-        <div class="competition-box">
+        <div class="competition-box">  -->
           <!-- <img src="{% static 'Competitions box.png' %}" alt="Image 1"> -->
-          <div class="comp-title">
+     <!--     <div class="comp-title">
               <p class="comp-title-text">AERO CONTRAPTION</p>
           </div>
           <img class="comp-img" src="{% static 'AeroContraption ICON.jpg' %}" alt="Image 2">
           <div class="comp-title-btn-panel">
               <a href="/zephyr/aerocontraption"><div class="comp-title-btn">EXPLORE</div></a>
               <a href="/zephyr/comingsoon"><div class="comp-title-btn">REGISTER</div></a>
-          </div>
+          </div>  -->
+          
       </div>
     </div>
 </body>

@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3aab0d0a4c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="{% static 'LOGO.png' %}" type="image/icon type">
+    <link rel="stylesheet" href="{%static 'all.css'%}">
+    <title>Careers in Aerospace</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Zephyr logo -->
+        <div class="left">
+            <img class="desktop-logo" src="{% static 'LOGO.png' %}" alt="Zephyr logo">
+        </div>
+        <!-- menu buttons -->
+        <div class="right">
+            <a href="/zephyr/home">HOME</a>
+            <a href="/zephyr/about">ABOUT</a>
+            <a href="/zephyr/cahome">CA HOMEPAGE</a>
+            <a href="/zephyr/contact">CONTACT</a>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <!-- illustration -->
+        <!-- illustration -->
+        <div class="left">
+            <img class="illustration" src="{% static 'AeroContraption.png' %}" alt="illustration">
+        </div>
+        <!-- text -->
+        <div class="right">
+            <!-- Welcome text -->
+            <div class="box1">
+                <p class="right-comp-heading">ABOUT</p>
+                <p class="right-comp-text">A talk by Airbus on the topic of 'Careers in Aerospace and Aviation Industry'
+                    is expected to provide an in-depth understanding of the various career opportunities available in
+                    the industry. The talk is likely to cover a wide range of topics such as aircraft design,
+                    manufacturing, engineering, sales, marketing, and customer support. Airbus may also provide insights
+                    into the latest technological advancements in the industry and how they are impacting the future of
+                    aviation. Additionally, the talk may offer advice on the skills and qualifications required to excel
+                    in the industry, such as a strong foundation in STEM subjects and soft skills like communication,
+                    problem-solving, and teamwork.</p>
+            </div>
+            <!-- CA title -->
+            <!-- <div class="box2">
+                    <p>CAMPUS</p>
+                    <p>AMBASSADOR</p>
+                    <p>PROGRAM</p>
+                </div> -->
+            <!-- Register button -->
+            <!-- <div class="box3">
+                <a href="/zephyr/register">REGISTER</a>
+            </div> -->
+            <!-- social media links -->
+            <div class="box4">
+                <p>Connect with us</p>
+                <div class="social">
+                    <a href="http://instagram.com/zephyr_iitbombay"><img class="insta" src="{% static 'Ig.png' %}"
+                            alt="Instagram"></a>
+                    <a href="http://www.facebook.com/profile.php?id=100087378432525"><img class="fb"
+                            src="{% static 'Fb.png' %}" alt="Facebook"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="/zephyr/home" class="active"><img class="logo" src="{% static 'LOGO.png' %}" alt="Zephyr logo"></a>
+            <div id="myLinks">
+                <a href="/zephyr/home">HOME</a>
+                <a href="/zephyr/about">ABOUT</a>
+                <a href="/zephyr/cahome">CA HOMEPAGE</a>
+                <a href="/zephyr/contact">CONTACT</a>
+                <a href="https://docs.google.com/forms/d/1QkuNAsWpPoEbBNF-Bhp-Th2hjC5YoQcXJnAHnx8NgMo/edit">REGISTER</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i id="hamburger-icon" class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <!-- End smartphone / tablet look -->
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <div id="hero-phone">
+        <div class="hero-image-phone">
+            <img id="hero-image-sizing-phone" src="{% static 'AeroContraption.png' %}">
+        </div>
+        <div class="hero-heading-phone">
+            <p class="hero-headbox-phone">ABOUT</p>
+            <p class="hero-subbox-phone">A talk by Airbus on the topic of 'Careers in Aerospace and Aviation Industry'
+                is expected to provide an in-depth understanding of the various career opportunities available in the
+                industry. The talk is likely to cover a wide range of topics such as aircraft design, manufacturing,
+                engineering, sales, marketing, and customer support. Airbus may also provide insights into the latest
+                technological advancements in the industry and how they are impacting the future of aviation.
+                Additionally, the talk may offer advice on the skills and qualifications required to excel in the
+                industry, such as a strong foundation in STEM subjects and soft skills like communication,
+                problem-solving, and teamwork.</p>
+        </div>
+    </div>
+    <!-- <div class="content" id="phone-foot">
+        <div class="box3">
+            <a href="/zephyr/register">REGISTER</a>
+        </div>
+    </div> -->
+</body>
+
+</html>

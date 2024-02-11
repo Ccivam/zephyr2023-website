@@ -32,8 +32,8 @@ def help_page(request):
     return render(request,'faq.html')
 def main_homepage(request):
     return render(request,'main_homepage.html')
-def surgical_strike(request):
-    return render(request,'surgical_strike.html')
+def symposium(request):
+    return render(request,'symposium.html')
 def water_rocket(request):
     return render(request,'water_rocket.html')
 def aerocontraption(request):
@@ -62,6 +62,9 @@ def mm(request):
     return render(request,'caa.html')
 def form_submit(request):
     return render(request,'form_submission.html')
+
+def register_symposium(request):
+    return render(request,'register_symposium.html')
 def home_view(request):
     context ={}
  
