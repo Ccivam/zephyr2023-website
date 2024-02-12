@@ -18,7 +18,9 @@
     * {
       box-sizing: border-box;
     }
-
+     ::placeholder {
+      color: black;
+    }
     
   </style>
 </head>
@@ -143,8 +145,8 @@
 
   
   <p>
-    <label for="id_year_of_study">Year of study:</label>
-    <input type="number" name="year_of_study" required id="id_year_of_study">
+    <label for="id_year_of_study">Program of study:</label>
+    <input type="text" name="program_of_study" required id="id_program_of_study">
     
     
   </p>
@@ -168,9 +170,9 @@
   
   <p>
    
-    <label for="id_statement_of_purpose">Link to your abstraction</label>
+    <label for="id_statement_of_purpose">Link to your abstraction and poster</label>
 
-    <textarea name="statement_of_purpose" cols="2" rows="3" required id="id_statement_of_purpose">
+    <textarea name="abstraction_poster" cols="2" rows="3" required id="id_link_to_abstraction_poster" placeholder="submit google drive link only">
     </textarea>
    
 
@@ -215,7 +217,7 @@
     </div>
   </div>
   <script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbzoAfU1qNGj-JrNudd7MKrA7Oi_-Rl8vgIcjnAVnB7Bx8LllGXojGSNXwJNCsMMNouX/exec'
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbw6tPr1CcfYauQE2EQXspNU7rnW8quDyQmlv7LDgkAi5WpOIrGuhPk9OfFySbCztKbi/exec'
 			const form = document.forms['formName']
 		 
 			 form.addEventListener('submit', e => {
