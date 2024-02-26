@@ -18,9 +18,7 @@
     * {
       box-sizing: border-box;
     }
-     ::placeholder {
-      color: black;
-    }
+
     
   </style>
 </head>
@@ -34,8 +32,8 @@
     </div>
     <!-- menu buttons -->
     <div class="nav-centre">
-      <p id="textrow1">SYMPOSIUM</p>
       
+      <p id="textrow2">SYMPOSIUM</p>
     </div>
     <div class="right">
       <a href="/zephyr/home">HOME</a>
@@ -99,7 +97,7 @@
         </div>
           
         <div class="mydiv">
-            <label class="mylabel">Link to your abstraction</label>
+            <label class="mylabel">Statement of purpose</label>
             <textarea name="statement_of_purpose" cols="40" rows="10" required id="id_statement_of_purpose">
 </textarea>
         </div>
@@ -145,8 +143,8 @@
 
   
   <p>
-    <label for="id_year_of_study">Program of study:</label>
-    <input type="text" name="program_of_study" required id="id_program_of_study">
+    <label for="id_year_of_study">Year of study:</label>
+    <input type="number" name="program_of_study" required id="id_year_of_study">
     
     
   </p>
@@ -214,7 +212,7 @@
     </div>
   </div>
   <script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbw6tPr1CcfYauQE2EQXspNU7rnW8quDyQmlv7LDgkAi5WpOIrGuhPk9OfFySbCztKbi/exec'
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxuxRmGSs6cyfXiLNbz8G8Z2NMtKjYtFIP1jhtceI7I0McdrH2UvB3Td3-0qgAFo2m4/exec'
 			const form = document.forms['formName']
 		 
 			 form.addEventListener('submit', e => {
